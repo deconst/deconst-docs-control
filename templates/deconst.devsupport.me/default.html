@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{{ envelope.title }}}</title>
+  <title>{{ deconst.content.envelope.title|safe }}</title>
 </head>
 <body>
 
-{{{ envelope.body }}}
+{{ deconst.content.envelope.body|safe }}
 
 </body>
 </html>
