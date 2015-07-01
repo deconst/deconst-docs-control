@@ -1,2 +1,0 @@
-[deconst.devsupport.me]
-/ default default.hbs

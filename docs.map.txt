@@ -1,2 +1,0 @@
-[deconst.devsupport.me]
-/ https://github.com/deconst/deconst-docs/

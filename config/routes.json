@@ -1,0 +1,7 @@
+{
+    "deconst.devsupport.me": {
+        "routes": {
+            "^/": "default.html"
+        }
+    }
+}
