@@ -12,4 +12,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-deconst-assets');
 
     grunt.registerTask('build', ['deconst_assets:assets']);
+
+    grunt.registerTask('default', ['build']);
 };
