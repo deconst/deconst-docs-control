@@ -1,5 +1,5 @@
 {
-    "deconst.devsupport.me": {
+    "deconst.horse": {
         "routes": {
             "^/": "default.html"
         }
