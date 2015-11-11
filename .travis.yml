@@ -1,11 +1,11 @@
----
 language: node_js
 node_js:
-- "0.12"
+- '0.12'
 env:
   global:
-    CONTENT_STORE_URL: https://deconst.horse:9000/
+  - CONTENT_STORE_URL: https://deconst.horse:9000/
     NODE_TLS_REJECT_UNAUTHORIZED: 0
+  - secure: p3cN9VttGdpH3NMVr+4eDjFjI6wWrnY2INEURO+6vkySAb3szapNw2dRcApRCm8tfy3hDHEM39cotRgmTwOg3ShdDiVkaaY4oHOQtXkMYSWuzuzPu7h5DH7XVLcf/IJqPQrXTW5En3yW44u0RKdlZVJNu7ze2Hfpr18SO+6ak/3i4HdFNUSIvZMqDllXMZMtVwacwYl9o6L56sph9Jn+rc1tGKttakKcFNeyRD+G1TK9ixNtSOi1W+KrLHC4RM/5ZLY9MCxJmZOLLRHnY9cqLffmnTd1Rk6HFAB2CIWm/Iy49C7dGXpz8eTkfu1i+7ABsbL9hvJWOHbkhVD0w6aiZt7nyUfDxzI+rwtNZjF6kYEJxbHXL1M7yzlDSOafh6htf25T8k4998X6TIBTY/Qpxvssqh+1L+KcPhrr1xvRZpBVMfbihU+FatKrModR83HqXjMNRSYKCw2D96F1hHz7aeR0/ES2B9ekQeuNznljoorb0RCRyNG/bcrdVYCXpz5mlyPXjMfmE0ii09dvYxF/Fn+Ml4+Re36mjtJ6Gdr5TX8KriUGNfmf0iurVarLluNzCsEowlYUkgQbZnIYrYt3/o/Ktw7pNvWrYL4KBq9RhmeI73oQ345btS3XUvLzottaMssXNGvc8Hg2K7S+Uowyn7gYbI+6fQ7a5CmaYJXp/Xw=
 install:
 - npm install -g grunt-cli
 - npm install
