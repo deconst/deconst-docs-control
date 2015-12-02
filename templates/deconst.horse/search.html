@@ -4,7 +4,7 @@
 
 {% block body %}
   <form method="get">
-    <input type="text" value="{{ query.q }}" placeholder="Search">
+    <input type="text" name="q" value="{{ query.q }}" placeholder="Search">
     <input type="submit" value="Go">
   </form>
 
