@@ -1,7 +1,8 @@
 {
     "deconst.horse": {
         "content": {
-            "/": "https://github.com/deconst/deconst-docs/"
+            "/": "https://github.com/deconst/deconst-docs/",
+            "/search/": null
         }
     }
 }
