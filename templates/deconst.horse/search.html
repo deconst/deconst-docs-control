@@ -1,28 +1,35 @@
 {% extends "_layouts/base.html" %}
 
 {% set query = deconst.request.query %}
-{% set r = query.q|search(query.page) %}
 
 {% block body %}
-  <h1>{{ r.total }} results found</h1>
+  <form action="get">
+    <input type="text" value="{{ query.q }}" placeholder="Search">
+    <input type="submit" value="Go">
+  </form>
 
-  {% for result in r.results %}
-    <div class="result">
-      <a href="{{ result.url }}">{{ result.title }}</a>
-      <p>{{ result.excerpt }}</p>
-    </div>
-  {% else %}
-    <p class="explanation">
-      No results found.
-    </p>
-  {% endfor %}
+  {% if query.q %}
+    {% set r = query.q|search(query.page) %}
+    <h1>{{ r.total }} results found</h1>
 
-  {% if r.pages > 1 %}
-    <div class="pager">
-      {% for p in range(1, r.pages) %}
-        <a href="/search?q={{ query.q }}&page={{ p }}">{{ p }}</a>
-        {%- if not loop.last %} | {% endif -%}
-      {% endfor %}
-    </div>
+    {% for result in r.results %}
+      <div class="result">
+        <a href="{{ result.url }}">{{ result.title }}</a>
+        <p>{{ result.excerpt }}</p>
+      </div>
+    {% else %}
+      <p class="explanation">
+        No results found.
+      </p>
+    {% endfor %}
+
+    {% if r.pages > 1 %}
+      <div class="pager">
+        {% for p in range(1, r.pages) %}
+          <a href="/search/?q={{ query.q }}&page={{ p }}">{{ p }}</a>
+          {%- if not loop.last %} | {% endif -%}
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endif %}
 {% endblock %}
