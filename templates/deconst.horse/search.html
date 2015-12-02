@@ -3,7 +3,7 @@
 {% set query = deconst.request.query %}
 
 {% block body %}
-  <form action="get">
+  <form method="get">
     <input type="text" value="{{ query.q }}" placeholder="Search">
     <input type="submit" value="Go">
   </form>
