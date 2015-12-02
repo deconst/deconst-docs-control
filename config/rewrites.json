@@ -15,6 +15,6 @@
       "to": "/$1/",
       "rewrite": false,
       "status": 301
-    },
+    }
   ]
 }
