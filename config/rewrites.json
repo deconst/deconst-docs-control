@@ -1,0 +1,13 @@
+{
+  "deconst.horse": [
+    {
+      "from": "^\\/logs\\/?$",
+      "to": "/",
+      "toProtocol": "https",
+      "toHostname": "iad1-10094-kibana.es.objectrocket.com",
+      "toPort": "20094",
+      "rewrite": false,
+      "status": 302
+    }
+  ]
+}
