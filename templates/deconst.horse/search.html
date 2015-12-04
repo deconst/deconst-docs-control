@@ -9,7 +9,7 @@
   </form>
 
   {% if query.q %}
-    {% set r = query.q|search(query.page) %}
+    {% set r = query.q|search(categories=["deconst.horse"], pageNumber=query.page) %}
     <h1>{{ r.total }} results found</h1>
 
     {% for result in r.results %}
