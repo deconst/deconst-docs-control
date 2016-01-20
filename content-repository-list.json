@@ -1,0 +1,5 @@
+[
+  { "type": "github", "project": "deconst/deconst-docs" },
+  { "type": "github", "project": "rackerlabs/docs-quickstart" },
+  { "type": "github", "project": "rackerlabs/docs-cloud-databases" }
+]
