@@ -6,14 +6,19 @@
     "type": "git",
     "url": "git+https://github.com/deconst/deconst-docs-control.git"
   },
-  "author": "",
+  "author": "Ash Wilson <smashwilson@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/deconst/deconst-docs-control/issues"
   },
+  "scripts": {
+    "start": "grunt build",
+    "deconst-control-build": "npm start"
+  },
   "homepage": "https://github.com/deconst/deconst-docs-control#readme",
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
     "grunt-deconst-assets": "^0.2.0"
   }
 }
