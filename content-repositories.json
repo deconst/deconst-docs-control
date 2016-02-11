@@ -1,5 +1,3 @@
 [
-  { "kind": "github", "project": "deconst/deconst-docs" },
-  { "kind": "github", "project": "rackerlabs/docs-quickstart" },
-  { "kind": "github", "project": "rackerlabs/docs-cloud-databases" }
+  { "kind": "github", "project": "deconst/deconst-docs" }
 ]
