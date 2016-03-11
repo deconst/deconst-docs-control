@@ -1,4 +1,4 @@
 [
   { "kind": "github", "project": "deconst/deconst-docs" },
-  { "kind": "github", "project": "rackerlabs/docs-rpc", branches: ["v10", "v11"] }
+  { "kind": "github", "project": "rackerlabs/docs-rpc", "branches": ["v10", "v11"] }
 ]
