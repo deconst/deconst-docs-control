@@ -1,4 +1,3 @@
 [
-  { "kind": "github", "project": "deconst/deconst-docs" },
-  { "kind": "github", "project": "rackerlabs/docs-cloud-servers" }
+  { "kind": "github", "project": "deconst/deconst-docs" }
 ]
