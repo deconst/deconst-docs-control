@@ -8,6 +8,8 @@ Control repository for the [self-hosted deconst-docs documentation](https://deco
 
 1. If necessary, deploy the [deconst docs](https://github.com/deconst/deconst-docs#deconst-dev-env-in-kubernetes-with-minikube)
 
+1. Open a new shell
+
 1. Submit the control repo assets to the content service
 
     The `CONTENT_STORE_APIKEY` must match the `ADMIN_APIKEY` set when deploying the [content service](https://github.com/deconst/content-service#deconst-dev-env-in-kubernetes-with-minikube).
@@ -24,5 +26,5 @@ Control repository for the [self-hosted deconst-docs documentation](https://deco
 1. Open the deconst docs site in a browser
 
     ```bash
-    open $(minikube service --url --namespace deconst presenter)
+    minikube service --namespace deconst presenter
     ```
