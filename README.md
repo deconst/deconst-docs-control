@@ -28,3 +28,9 @@ Control repository for the [self-hosted deconst-docs documentation](https://deco
     ```bash
     minikube service --namespace deconst presenter
     ```
+
+1. Open the deconst staging docs site in a browser
+
+    ```bash
+    open $(minikube service --url --namespace deconst staging-presenter)/staging/
+    ```
